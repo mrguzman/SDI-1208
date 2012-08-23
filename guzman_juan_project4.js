@@ -84,3 +84,12 @@ function checkForUrl (url){
 checkForUrl("fullsail.edu")
 */
 
+// String 4: Uppercase each work in a string.
+
+function capEachWord (phrase) {
+	return phrase.charAt(0).toUpperCase() + phrase.slice(1)
+};
+
+console.log( capEachWord("this is a phrase in caps!") )
+
+
