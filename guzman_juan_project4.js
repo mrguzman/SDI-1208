@@ -43,7 +43,7 @@ checkForNumber("8005557959")
 
 // String 2: Is it an email?!
 
-
+/*
 function checkForEmail (email){
 	var atSymbol = email.indexOf("@");
 	var dotCom = email.indexOf(".");
@@ -62,5 +62,25 @@ function checkForEmail (email){
 
 checkForEmail("@yahoo")
 
+*/
 
+// String 3: Is it a URL?
+
+/*
+function checkForUrl (url){
+	var httpCheck = url.indexOf("http");
+	var dotCom = url.indexOf(".");
+	if (httpCheck === -1){
+		console.log("This URL is incomplete.")
+		} else if (dotCom === -1){
+			console.log("This begins to look like a web address")
+	} else {
+		console.log("This looks like a web address")
+	}	
+
+};
+
+
+checkForUrl("fullsail.edu")
+*/
 
