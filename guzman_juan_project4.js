@@ -47,10 +47,12 @@ checkForNumber("8005557959")
 function checkForEmail (email){
 	var atSymbol = email.indexOf("@");
 	var dotCom = email.indexOf(".");
-	if (atSymbol === -1, dotCom === -1){
+	if (atSymbol === -1){
 		console.log("I dont think this is an email address.")
-		} else {
-			console.log("I see the \"@\" symbol. This could be an email address.")
+		} else if (dotCom === -1){
+			console.log("I see the \"@\" symbol. This could be an email address, but it's incomplete.")
+			} else {
+			console.log("This looks like an email address.")
 	};
 	return
 
@@ -58,4 +60,7 @@ function checkForEmail (email){
 
 
 
-checkForEmail("yahoo.com")
+checkForEmail("@yahoo")
+
+
+
