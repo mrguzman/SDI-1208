@@ -87,9 +87,16 @@ checkForUrl("fullsail.edu")
 // String 4: Uppercase each work in a string.
 
 function capEachWord (phrase) {
-	return phrase.charAt(0).toUpperCase() + phrase.slice(1)
+	var splitWords = phrase.split(" ");
+	for ( var i = 0; i < splitWords.length; i++ ){
+		var firstLet = splitWords[i].charAt(0).toUpperCase();
+		splitWords[i] = firstLet + splitWords[i].substr(1);
+	}
+	return splitWords.join(" ")
+	
 };
 
 console.log( capEachWord("this is a phrase in caps!") )
-
+//for this I had to use lynda.com and w3schools.com to figure out that you can split and join phrases.
+//the activities did not really dive too much on this type of manipulation.
 
