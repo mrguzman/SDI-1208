@@ -5,7 +5,7 @@
 
 
 
-// 1: String 1: Is it a phone number pattern?!
+// 1: Strings 1: Is it a phone number pattern?!
 
 function checkForNumber (phoneNumber){
 		var first3 = phoneNumber.indexOf("-");
@@ -37,11 +37,11 @@ function checkForNumber (phoneNumber){
 		};
 };
 
-checkForNumber("8005557959")
+checkForNumber("4075551234")
 
 
 
-// 2: String 2: Is it an email?!
+// 2: Strings 2: Is it an email?!
 
 
 function checkForEmail (email){
@@ -63,7 +63,7 @@ checkForEmail("@yahoo")
 
 
 
-// 3: String 3: Is it a URL?
+// 3: Strings 3: Is it a URL?
 
 
 function checkForUrl (url){
@@ -84,7 +84,7 @@ checkForUrl("fullsail.edu")
 
 
 
-// 4: String 4: Uppercase each work in a string.
+// 4: Strings 4: Uppercase each work in a string.
 
 
 function capEachWord (phrase) {
@@ -100,28 +100,28 @@ function capEachWord (phrase) {
 console.log( capEachWord("this is a phrase in caps!") )
 
 //for this code I had to use lynda.com and w3schools.com to figure out that you can split and join phrases.
-//the activities did not really dive too much on this type of manipulation.
+//the previous activities did not really dive too much on this type of manipulation.
 
 
 
-// 5: Number 1: convert string to actual number.
+// 5: Numbers 1: convert string to actual number.
 
 function convertNum (myNumber) {
 	var string = Number(myNumber);
 	console.log(string + 3)
 };
 
-//convertNum("1983")
+convertNum("1983")
 
 
 
-// 6: Number 2: Decimal points
+// 6: Numbers 2: Decimal points
 
 function converDec (num){
 		var decimal = num.toFixed(3);
 		console.log(decimal)
 };
 
-//converDec(3.1);
+converDec(3.1);
 
 
