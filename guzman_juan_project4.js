@@ -3,7 +3,7 @@
 // Project 4 Library
 
 
-/*
+
 
 // 1: String 1: Is it a phone number pattern?!
 
@@ -33,17 +33,17 @@ function checkForNumber (phoneNumber){
 				} else { 
 					console.log (numberCheck + " looks like an area code. This might be a phone number.")
 			};
-			return
+			
 		};
 };
 
 checkForNumber("8005557959")
-*/
+
 
 
 // 2: String 2: Is it an email?!
 
-/*
+
 function checkForEmail (email){
 	var atSymbol = email.indexOf("@");
 	var dotCom = email.indexOf(".");
@@ -53,25 +53,24 @@ function checkForEmail (email){
 			console.log("I see the \"@\" symbol. This could be an email address, but it's incomplete.")
 			} else {
 			console.log("This looks like an email address.")
-	};
-	return
+	}
+	
 
 };
 
 
-
 checkForEmail("@yahoo")
 
-*/
+
 
 // 3: String 3: Is it a URL?
 
-/*
+
 function checkForUrl (url){
 	var httpCheck = url.indexOf("http");
 	var dotCom = url.indexOf(".");
 	if (httpCheck === -1){
-		console.log("This URL is incomplete.")
+		console.log("This URL looks incomplete.")
 		} else if (dotCom === -1){
 			console.log("This begins to look like a web address")
 	} else {
@@ -82,12 +81,12 @@ function checkForUrl (url){
 
 
 checkForUrl("fullsail.edu")
-*/
+
 
 
 // 4: String 4: Uppercase each work in a string.
 
-/*
+
 function capEachWord (phrase) {
 	var splitWords = phrase.split(" ");
 	for ( var i = 0; i < splitWords.length; i++ ){
@@ -102,19 +101,27 @@ console.log( capEachWord("this is a phrase in caps!") )
 
 //for this code I had to use lynda.com and w3schools.com to figure out that you can split and join phrases.
 //the activities did not really dive too much on this type of manipulation.
-*/
+
 
 
 // 5: Number 1: convert string to actual number.
-/*
+
 function convertNum (myNumber) {
 	var string = Number(myNumber);
-	return console.log(string + 3)
+	console.log(string + 3)
 };
 
-convertNum("1983")
-*/
+//convertNum("1983")
 
 
-// 6: Array 1:
+
+// 6: Number 2: Decimal points
+
+function converDec (num){
+		var decimal = num.toFixed(3);
+		console.log(decimal)
+};
+
+//converDec(3.1);
+
 
